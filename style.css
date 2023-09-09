@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "font-gordita";
+}
+
+
+@font-face {
+  font-family: "font-gordita";
+  src: url("./webfonts/GORDITA\ BLACK.OTF");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "font-gordita";
+  src: url("./webfonts/GORDITA\ BOLD.OTF");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "font-gordita";
+  src: url("./webfonts/GORDITA\ MEDIUM.OTF");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "font-gordita";
+  src: url("./webfonts/GORDITA\ REGULAR.OTF");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "font-gordita";
+  src: url("./webfonts/GORDITA\ THIN.OTF");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "font-gordita";
+  src: url("./webfonts/GORDITA\ ULTRA.OTF");
+  font-weight: 300;
+}
+
+
+.side-bar{
+  height: 100vh;
+  width: 320px;
+  background-color: #011A66;
+  z-index: 999;
+}
+.logo-main{
+  padding: 0 1.2rem 1.2rem;
+}
+header{
+  width: calc(100% - 320px);
+  background-color: #F1F5FB;
+  padding: 1rem 1.5rem;
+  transition: 0.5s;
+  z-index: 999;
+}
+.head-search{
+  border: none;
+  padding-right: .5rem!important;
+  padding-left: .5rem!important;
+  color: #005AD2;
+  font-weight: 500;
+  font-size: 16px;
+}
+.main {
+  margin-left: 22rem;
+  padding: 1.5rem 1rem 3.8rem;
+  overflow: auto;
+}
+
+.card-cb {
+  box-shadow: rgba(0, 44, 117, 0.05) 5px 15px 40px;
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.card-main {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(90.35deg, rgb(20, 213, 213) 0%, rgb(86, 147, 255) 100%);
+}
+
+.hover-box {
+  box-shadow: rgba(0, 30, 82, 0.05) 35px 20px 40px;
+  background-color: rgb(255, 255, 255) !important;
+  padding: 8px 16px;
+  color: rgb(0, 21, 56);
+  border-radius: 1rem;
+}
+
+.hover-content1 {
+  background: linear-gradient(93.58deg, rgba(21, 212, 214, 0.125) 0%, rgba(86, 148, 255, 0.125) 100%);
+}
+
+.hover-content2::before {
+  content: "";
+  background: url(./assects/img/curly-bracket.png);
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0px;
+  left: -10px;
+}
+
+.hover-content::before {
+  content: '';
+  background-image: url("./assects/img/curly-bracket-down.png");
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+.hover-box {
+  transform: translateY(-20%) scale(0);
+  transition: all 0.5s;
+  z-index: 99;
+}
+
+.card-main:hover .hover-box {
+  transform: translatey(-20%) scale(1);
+}
+.card-main2:hover .hover-box {
+  transform: translatey(-20%) scale(1);
+}
+
+.card-main::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  height: 50%;
+  border-left: 2px dashed rgb(209, 211, 214);
+}
+
+.card-main2:hover {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(90.35deg, rgb(20, 213, 213) 0%, rgb(86, 147, 255) 100%);
+}
+
+.card-main2:hover .hover-white {
+  color: white;
+}
+.card2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  border-left: 2px dashed #D1D3D6;
+  z-index: -1;
+}
+
+.border-left::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: 100px;
+  border-bottom: 2px dashed #D1D3D6;
+  z-index: -1;
+}
+
+.border-right::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  border-bottom: 2px dashed #D1D3D6;
+  left: 100%;
+  z-index: -1;
+}
+
+.border-left2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: 500px;
+  border-bottom: 2px dashed #D1D3D6;
+  z-index: -1;
+}
+
+.border-right2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border-bottom: 2px dashed #D1D3D6;
+  left: 100%;
+  z-index: -1;
+}
+
+.card2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  border-left: 2px dashed #D1D3D6;
+  z-index: -1;
+}
+
+.blue-round{
+  background: linear-gradient(180deg, #001538 27.5%, #005AD2 138.75%);
+}
+.select{
+  padding-bottom: 50px;
+}
+.check input{
+  display: none;
+}
+.check label{
+  position: relative;
+}
+.check label::before{
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+ background-color: white;
+  margin-right: 5px;
+  vertical-align: bottom;
+  position: relative;
+  border-radius: 6px;
+}
+.check label::after{
+    content: "\2713";
+    color: #005AD2;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    display: none;
+  
+}
+.check input:checked + label::after{
+  display: block;
+}
+.check input:checked + label::before{
+ 
+}
+.search-any input{
+  border: none;
+  outline: none;
+}
+.aside-link{
+  font-size: 16px;
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+  opacity: 0.6;
+}
+.hover-link{
+  padding: 0.8rem 1rem;
+}
+.hover-link:hover{
+  background-color: #005AD2;
+  color: #fff;
+  transition: all 0.5s;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+}
+.hover-link:hover .link-img{
+  opacity: 1 !important;
+}
+.iteam li a {
+  margin-top: .25rem!important;
+  margin-bottom: .25rem!important;
+}
+.aside-card{
+  background: linear-gradient(60.91deg, rgba(255, 255, 255, 0.15) 1.36%, rgba(255, 255, 255, 0) 78.27%);
+  border-radius: 8px;
+}
+.aside-logo{
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin-top: -50px;
+  transform: translateX(25px);
+  border-radius: 50%!important;
+  border: 5px solid #192c4c !important;
+}
+.aside-logo img{
+  width: 100%;
+}
+.exit{
+  background: linear-gradient(180deg, #5792FF 0%, #00C5BF 100%) !important;
+}
